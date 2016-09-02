@@ -24,7 +24,7 @@ function initFunction()
     canvas = document.getElementById("omniImage");
     context = canvas.getContext("2d");
 
-    for(var i = 0; i < 10; i++)
+    for(var i = 0; i < 14; i++)
     {
         imgList[i] = new Image;
     }
@@ -36,8 +36,12 @@ function initFunction()
     imgList[5].src = "shad_lit.png";
     imgList[6].src = "shad_clr.png";
     imgList[7].src = "back_btf.png";
-    imgList[8].src = "back_hrt.png";
-    imgList[9].src = "back_wav.png";
+    imgList[8].src = "back_wav.png";
+    imgList[9].src = "back_hrt.png";
+    imgList[10].src = "back_rdh.png";
+    imgList[11].src = "back_net.png";
+    imgList[12].src = "back_txc.png";
+    imgList[13].src = "back_txe.png";
     setInterval(refreshPage, 200);
 
     $('.materialButton').hover(
@@ -49,6 +53,19 @@ function initFunction()
         function(){
             $(this).animate({
                 opacity: 0.6
+            }, 500);
+        }
+    );
+
+    $('#panel').hover(
+        function(){
+            $(this).animate({
+                opacity: 0.8
+            }, 500);
+        },
+        function(){
+            $(this).animate({
+                opacity: 0.5
             }, 500);
         }
     );
@@ -99,8 +116,12 @@ function drawCanvas(__context, __width, __height)
     switch(background.style)
     {
         case 'butterfly':   bgImg = imgList[7]; break;
-        case 'heart':       bgImg = imgList[8]; break;
-        case 'waves':       bgImg = imgList[9]; break;
+        case 'waves':       bgImg = imgList[8]; break;
+        case 'heart':       bgImg = imgList[9]; break;
+        case 'red':         bgImg = imgList[10]; break;
+        case 'net':         bgImg = imgList[11]; break;
+        case 'chtext':      bgImg = imgList[12]; break;
+        case 'engtext':     bgImg = imgList[13]; break;
         case 'none': default: break;
     }
     if(bgImg)

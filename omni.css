@@ -10,7 +10,7 @@ body
 
 header
 {
-    height: 36px;
+    height: 40px;
     background: #EDEDED;
     box-shadow: 0 0 10px #00bcd4;
     font-size: 16px;
@@ -20,11 +20,11 @@ header
 #headLine
 {
     float: left;
-    width: 165px;
-    height: 36px;
+    width: 170px;
+    height: 40px;
     background: #00bcd4;
     color: #FFFFFF;
-    line-height: 36px;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ header
 {
     float: right;
     width: 155px;
-    height: 36px;
+    height: 40px;
     line-height: 60px;
     margin: 0 4px;
 }
@@ -43,8 +43,8 @@ header
     opacity: 0.6;
     float: right;
     width: 70px;
-    height: 36px;
-    line-height: 36px;
+    height: 40px;
+    line-height: 40px;
     font-weight: normal;
 }
 
@@ -58,13 +58,13 @@ header
 #panel
 {
     background: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 5px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px #00bcd4;
     position: fixed;
     padding: 5px;
     margin: 8px;
-    top: 36px;
+    top: 40px;
     right: 0px;
 }
 
@@ -84,7 +84,7 @@ label
 
 form>p
 {
-    height: 18px;
+    height: 24px;
 }
 
 input[type="range"]
@@ -123,5 +123,5 @@ input[type="text"]
 #omniImage
 {
     box-shadow: 0 0 10px;
-    margin: 10px;
+    margin-left: 30px;
 }
