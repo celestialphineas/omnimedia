@@ -1,0 +1,127 @@
+body
+{
+    background: #DDDDDD;
+    font-size: 14px;
+    color: #333333;
+    font-family: "Helvetica", "Segoe UI", "Hiragino Sans GB", "思源黑体", "Microsoft YaHei";
+    margin: 0;
+}
+
+
+header
+{
+    height: 36px;
+    background: #EDEDED;
+    box-shadow: 0 0 10px #00bcd4;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#headLine
+{
+    float: left;
+    width: 165px;
+    height: 36px;
+    background: #00bcd4;
+    color: #FFFFFF;
+    line-height: 36px;
+    text-align: center;
+}
+
+#iconList
+{
+    float: right;
+    width: 155px;
+    height: 36px;
+    line-height: 60px;
+    margin: 0 4px;
+}
+
+.materialButton
+{
+    color: #333333;
+    opacity: 0.6;
+    float: right;
+    width: 70px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.buttonText
+{
+    color: #333333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#panel
+{
+    background: #FFFFFF;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    position: fixed;
+    padding: 5px;
+    margin: 8px;
+    top: 36px;
+    right: 0px;
+}
+
+#formPanel
+{
+    float: left;
+    width: 265px;
+    margin: 10px;
+}
+
+label
+{
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+}
+
+form>p
+{
+    height: 18px;
+}
+
+input[type="range"]
+{
+    -webkit-appearance: none;
+    background-color: #86A697;
+    border-radius: 15px;
+    width: 150px;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    cursor: default;
+    top: -3px;
+    height: 12px;
+    width: 12px;
+    background: #333333;
+    border-radius: 8px;
+}
+
+select
+{
+    font-size: 12px;
+    font-family: "Helvetica", "Segoe UI", "Hiragino Sans GB", "思源黑体", "Microsoft YaHei";
+    width: 150px;
+}
+
+input[type="text"]
+{
+    font-size: 12px;
+    width: 150px;
+}
+
+#omniImage
+{
+    box-shadow: 0 0 10px;
+    margin: 10px;
+}

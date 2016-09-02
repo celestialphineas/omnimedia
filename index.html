@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>全媒体头像生成器</title>
+        <link rel="stylesheet" type="text/css" href="omni.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css" />
+        <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="headLine">
+                <embed src="header.svg">
+            </div>
+            <div id="iconList">
+                <div class="materialButton">
+                    <i class="fa fa-download"></i>
+                    <a class="buttonText" href="javascript:exportCanvas()">保存</a>
+                </div>
+                <div class="materialButton">
+                    <i class="fa fa-paint-brush"></i>
+                    <a class="buttonText" href="javascript:toggleForm()">编辑</a>
+                </div>
+            </div>
+        </header>
+        <div id="panel">
+                <div id="formPanel">
+                    <form>
+                        <p>
+                            <label for="setLogoStyle">
+                                Logo 样式
+                            </label>
+                            <select id="setLogoStyle">
+                                <option value="colored">
+                                    彩色
+                                </option>
+                                <option value="white" selected="selected">
+                                    白色
+                                </option>
+                                <option value="black">
+                                    黑色
+                                </option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="setLogoTransparent">
+                                Logo 透明度
+                            </label>
+                            <input type="range" id="setLogoTransparent" min="0" max="1" step="0.01" value="1">
+                        </p>
+                        <p>
+                            <label for="setEffect">
+                                效果
+                            </label>
+                            <select id="setEffect">
+                                <option value="none">
+                                    无
+                                </option>
+                                <option value="shadow">
+                                    柔和阴影
+                                </option>
+                                <option value="flat" selected="selected">
+                                    扁平风阴影
+                                </option>
+                                <option value="light">
+                                    发光
+                                </option>
+                                <option value="rainbow">
+                                    彩虹
+                                </option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="setBgStyle">
+                                背景样式
+                            </label>
+                            <select id="setBgStyle">
+                                <option value="none">
+                                    无
+                                </option>
+                                <option value="butterfly">
+                                    蝴蝶
+                                </option>
+                                <option value="heart">
+                                    心
+                                </option>
+                                <option value="waves" selected="selected">
+                                    波涛
+                                </option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="setBgTransparent">
+                                背景图透明度
+                            </label>
+                            <input type="range" id="setBgTransparent"  min="0" max="1" step="0.01" value="0.6">
+                        </p>
+                        <p>
+                            <label for="setBackground">
+                                背景颜色
+                            </label>
+                            <input type="text" id="setBackground" value="#0D5661"/>
+                        </p>
+                        <a href="http://nipponcolors.com/" target="_Blank">
+                        <p>到 Nippon Colors 挑选颜色~</p></a>
+                    </form>
+                </div>
+        </div>
+        <canvas id="omniImage"></canvas>
+        <script type="text/javascript" src="omni.js"></script>
+    </body>
+</html>
