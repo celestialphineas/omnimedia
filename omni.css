@@ -1,6 +1,6 @@
 body
 {
-    background: #DDDDDD;
+    background: #DDE0E2;
     font-size: 14px;
     color: #333333;
     font-family: "Helvetica", "Segoe UI", "Hiragino Sans GB", "思源黑体", "Microsoft YaHei";
@@ -26,6 +26,12 @@ header
     color: #FFFFFF;
     line-height: 40px;
     text-align: center;
+}
+
+embed
+{
+    width: 170px;
+    height: 40px;
 }
 
 #iconList
@@ -117,11 +123,10 @@ select
 input[type="text"]
 {
     font-size: 12px;
-    width: 150px;
+    width: 100px;
 }
 
 #omniImage
 {
     box-shadow: 0 0 10px;
-    margin-left: 30px;
 }

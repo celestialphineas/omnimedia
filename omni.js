@@ -65,7 +65,7 @@ function initFunction()
         },
         function(){
             $(this).animate({
-                opacity: 0.5
+                opacity: 0.3
             }, 500);
         }
     );
@@ -78,7 +78,8 @@ function refreshPage()
     canvas.width = canvas.height =
         screenWidth > screenHeight ? 
         screenHeight - 60 : screenWidth - 60;
-    canvas.style.marginTop = screenHeight - canvas.height - 50 + 'px';
+    canvas.style.marginTop = (screenHeight - canvas.height)/2 - 20 + 'px';
+    canvas.style.marginLeft = (screenWidth - canvas.width)/2 + 'px';
     refreshForm();
     drawCanvas(context, canvas.width, canvas.height);
 }
